@@ -229,4 +229,7 @@ interval_names = {0: "unison", 1: "minor 2nd", 2: "major 2nd",
                   6: "tritone", 7: "perfect 5th", 8: "minor 6th",
                   9: "major 6th", 10: "minor 7th", 11: "major 7th",
                   12: "octave"}
-chord_names = [["major", [4, 7]], ["minor", [3, 7]]]
+chord_names = [["major", [4, 7]], ["minor", [3, 7]], ["major 7th", [4, 7, 11]],
+                ["minor 7th", [3, 7, 10]], ["diminished 7th", [3, 6, 9]],
+                ["dominant 7th", [4, 7, 10]], ["diminished", [3, 6]],
+                ["augmented", [4, 8]]]
