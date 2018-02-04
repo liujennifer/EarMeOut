@@ -1,4 +1,7 @@
-## Welcome to GitHub Pages
+## What does EarTrainer do?
+
+Ear trainer is an Amazon Alexa Skill we developed at McHacks V 2018. Our team decided to develop EarTrainer to help beginner or even aspiring musicians to develop their ear training with intervals.
+
 
 You can use the [editor on GitHub](https://github.com/liujennifer/EarTrainer/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
