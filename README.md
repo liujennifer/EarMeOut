@@ -11,4 +11,4 @@ Even in the comfort of one's own home, practicing your musical ear can be hard w
 Amazon's Alexa is ideal for such practice because of its ease of use. It doesn't even require sight, or a keyboard and mouse!  Our Alexa Skill plays a random interval and asks the user to identify it, such as unison or a perfect fourth, then tells them whether they are right or not, allowing the user to practice simple intervals without the need of another person and with immediate, effortless feedback!
 
 ## The Team
-Jennifer Liu, Oscar Baracos, and Michelle Luo are all first years Computer Science students at the University of Toronto St. George with ambitions at the size of the dreams!
+Jennifer Liu, Oscar Baracos, and Michelle Luo are all first years Computer Science students at the University of Toronto St. George with big ambitions!
