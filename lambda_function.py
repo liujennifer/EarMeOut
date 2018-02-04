@@ -101,23 +101,30 @@ def check_answer(answer, interval_number: int):
 
 
 def play_sound():
-    interval_num = random.randint(0, len(interval_names))
+    base_note = random.randint(15, 49)
+    interval_num = random.randint(0, len(interval_names) - 1)
     session_attributes = {"interval_num": interval_num}
-    interval_url = interval_names[interval_num].replace(' ', '_')
-    url = 'https://raw.githubusercontent.com/liujennifer/EarTrainer/master/' \
-          'intervals/' + interval_url + '.mp3'
+    # interval_url = interval_names[interval_num].replace(' ', '_')
+    # url = 'https://raw.githubusercontent.com/liujennifer/EarTrainer/master/' \
+    #       'intervals/' + interval_url + '.mp3'
+    url1 = 'https://raw.githubusercontent.com/liujennifer/EarTrainer/master/' \
+           'notes-mp3/' + str(base_note) + '.mp3'
+    url2 = 'https://raw.githubusercontent.com/liujennifer/EarTrainer/master/' \
+           'notes-mp3/' + str(base_note + interval_num) + '.mp3'
 
     response = {
         'outputSpeech': {
             'type': 'SSML',
             'ssml': "<speak>What is this interval?"
-                    "<audio src='" + url + "'/></speak>"
+                    "<audio src='" + url1 + "'/>"
+                    "<audio src='" + url2 + "'/></speak>"
         },
         'reprompt': {
             'outputSpeech': {
                 'type': 'SSML',
                 'text': "<speak>What is this interval?"
-                        "<audio src='" + url + "'/></speak>"
+                        "<audio src='" + url1 + "'/>"
+                        "<audio src='" + url2 + "'/></speak>"
             }
         },
         'shouldEndSession': False
