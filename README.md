@@ -1,4 +1,4 @@
-## What does EarTrainer do?
+## What does EarMeOut do?
 EarMeOut is an Amazon Alexa Skill we developed at McHacks V 2018. Our team decided to develop EarTrainer to help beginner or even aspiring musicians to develop their ear training with intervals.
 
 ### Identifying The Problem
