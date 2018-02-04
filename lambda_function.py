@@ -31,6 +31,20 @@ def build_response(session_attributes, speechlet_response):
     }
 
 
+def get_continue_response():
+    session_attributes = {}
+    card_title = "Play again"
+    speech_output = "What do you want to practice?"
+
+    # If the user either does not reply to the welcome message or says something
+    # that is not understood, they will be prompted again with this text.
+    reprompt_text = "Please tell me what you want to practice"
+
+    should_end_session = False
+    return build_response(session_attributes, build_speechlet_response(
+        card_title, speech_output, reprompt_text, should_end_session))
+
+
 def get_welcome_response():
     """ If we wanted to initialize the session to have some attributes we could
     add those here
@@ -199,6 +213,8 @@ def on_intent(intent_request, session):
         elif session['attributes'].get('interval_num') is not None:
             interval_number = session['attributes']['interval_num']
             return check_interval(answer, interval_number)
+    elif intent_name == "Continue":
+        return get_continue_response()
     elif intent_name == "AMAZON.HelpIntent":
         return get_welcome_response()
     elif intent_name == "AMAZON.CancelIntent" or intent_name == \
