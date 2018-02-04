@@ -3,7 +3,7 @@
 ## What does Ear Me Out do?
 Ear Me Out is an Amazon Alexa Skill developed at McHacks V 2018. Our team decided to develop Ear Me Out to help beginners as well as aspiring musicians to develop their ear training with intervals.
 
-### Identifying The Problem
+## Identifying The Problem
 We all enjoy music. However, for those of us who do not have a musical ear, recognizing relative pitches is always a feat.
 Even in the comfort of one's own home, practicing your musical ear can be hard without access to convenient tools at the touch of your hand.
 
