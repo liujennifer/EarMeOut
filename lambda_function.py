@@ -104,9 +104,7 @@ def play_sound():
     base_note = random.randint(15, 49)
     interval_num = random.randint(0, len(interval_names) - 1)
     session_attributes = {"interval_num": interval_num}
-    # interval_url = interval_names[interval_num].replace(' ', '_')
-    # url = 'https://raw.githubusercontent.com/liujennifer/EarTrainer/master/' \
-    #       'intervals/' + interval_url + '.mp3'
+
     url1 = 'https://raw.githubusercontent.com/liujennifer/EarTrainer/master/' \
            'notes-mp3/' + str(base_note) + '.mp3'
     url2 = 'https://raw.githubusercontent.com/liujennifer/EarTrainer/master/' \
@@ -173,8 +171,6 @@ def lambda_handler(event, context):
         return on_session_ended(event['request'], event['session'])
 
 
-# interval_names = {0: "major 6th", 1: "minor 3rd", 2: "perfect 4th",
-#                   3: "unison", 4: "tritone"}
 interval_names = {0: "unison", 1: "minor 2nd", 2: "major 2nd",
                   3: "minor 3rd", 4: "major 3rd", 5: "perfect 4th",
                   6: "tritone", 7: "perfect 5th", 8: "minor 6th",
