@@ -1,15 +1,14 @@
-## What does EarMeOut do?
-EarMeOut is an Amazon Alexa Skill we developed at McHacks V 2018. Our team decided to develop EarTrainer to help beginner or even aspiring musicians to develop their ear training with intervals.
+# Ear Me Out
+
+## What does Ear Me Out do?
+Ear Me Out is an Amazon Alexa Skill developed at McHacks V 2018. Our team decided to develop Ear Me Out to help beginners as well as aspiring musicians to develop their ear training with intervals.
 
 ### Identifying The Problem
-Growing up, playing an instrument was required in most cases whether it was in band class, or learning to play on your own.  Part of these lessons were practical test where one would have to identify the musical interval solely through hearing.  But how would one practice for these listening tests?  The obvious answer would be to practice with the teacher but unfortunately that's not possible sometimes.  Another solution would be to practice on your own but how?
+We all enjoy music. However, for those of us who do not have a musical ear, recognizing relative pitches is always a feat.
+Even in the comfort of one's own home, practicing your musical ear can be hard without access to convenient tools at the touch of your hand.
 
-### The Solution
-Amazon's Alexa is new great tool that can recreate a practice environment much like the ones someone would experience while practicing for listening test.  Alexa is ideal for creating such environments because it doesn't require sight.  Our Alexa skill will play a random interval and ask the user to identify it(e.g. 'unison', 'perfect fourth', etc.) then telling them if they're right or wrong, allowing the user to practice simple intervals without the need of another person. 
+## The Solution
+Amazon's Alexa is ideal for such practice because of its ease of use. It doesn't even require sight, or a keyboard and mouse!  Our Alexa Skill plays a random interval and asks the user to identify it, such as unison or a perfect fourth, then tells them whether they are right or not, allowing the user to practice simple intervals without the need of another person and with immediate, effortless feedback!
 
 ## The Team
-Jennifer Liu, Oscar Baracos, and Michelle Luo are all first years studying Computer Science at the University of Toronto St. George Campus aspiring to one day be a leader in the Computer Science community.
-
-<!--You can use the [editor on GitHub](https://github.com/liujennifer/EarTrainer/edit/master/README.md) to maintain and preview the content for your website in Markdown files.-->
-
-
+Jennifer Liu, Oscar Baracos, and Michelle Luo are all first years Computer Science students at the University of Toronto St. George with ambitions at the size of the dreams!
