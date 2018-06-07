@@ -52,8 +52,9 @@ def get_welcome_response():
 
     session_attributes = {}
     card_title = "Welcome"
-    speech_output = "Welcome to Ear Me Out. " \
-                    "What do you want to practice?"
+    speech_output = "Welcome to Ear Me Out, an ear trainig skill made by " \
+                    "Oscar, Jennifer and Michelle. " \
+                    "What would you like to practice?"
 
     # If the user either does not reply to the welcome message or says something
     # that is not understood, they will be prompted again with this text.
@@ -106,7 +107,10 @@ def check_interval(answer, interval_number: int):
     if correct_interval == str(answer):
         output = "Correct!"
     else:
-        output = f'Incorrect! This is a {correct_interval}. You said {answer}.'
+        if answer is None:
+            output = f'This is a {correct_interval}.'
+        else:
+            output = f'Incorrect! This is a {correct_interval}.'
 
     title = f'Answer: {correct_interval}, response: {answer}'
 
@@ -119,8 +123,10 @@ def check_chord(answer: str, chord: int):
     if correct_chord == str(answer):
         output = "Correct!"
     else:
-        output = f'Incorrect! This is a {correct_chord} chord. You said' \
-                 f'{answer}.'
+        if answer is None:
+            output = f'This is a {correct_chord} chord'
+        else:
+            output = f'Incorrect! This is a {correct_chord} chord.'
 
     title = f'Answer: {correct_chord}, response: {answer}'
 
@@ -207,6 +213,9 @@ def on_intent(intent_request, session):
         return play_chord()
     elif intent_name == "CheckAnswer":
         answer = intent['slots']['Answer']['value']
+        if answer == "know":
+            answer = None
+
         if session['attributes'].get('chord') is not None:
             chord = session['attributes']['chord']
             return check_chord(answer, chord)
